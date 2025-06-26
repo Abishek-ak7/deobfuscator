@@ -314,6 +314,9 @@ app.post('/deobfuscate', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('🛡️ JavaScript Deobfuscator API is running');
+});
 
 //It will be used to check the status of the server
 app.get('/health', (req, res) => {
