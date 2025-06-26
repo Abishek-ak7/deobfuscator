@@ -2,11 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-app.use(cors({
-  origin: ['chrome-extension://ngolojgeelomimfihhecmbajbjjfdhdo'],
-  methods: ['POST'],
-  allowedHeaders: ['Content-Type']
-}));
+app.use(cors());
 app.use(express.json({ limit: '2mb' }));
 
 // Set timeout for all requests
